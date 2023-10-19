@@ -79,6 +79,7 @@ header .home_plant{
     font-family: 'Mukta Vaani', sans-serif;
     font-size: 3.4em;
     font-weight: bold;
+    line-height: 1.2em;
     
 }
 .wf_left p{
@@ -88,7 +89,7 @@ header .home_plant{
     margin-top: 20px;
 }
 .wf_left{
-    width: 50%;
+    width: 440px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -100,4 +101,12 @@ header .home_plant{
     width: 100;
     margin: 0px 0px 0px 80px;
     display: flex;
+}
+.wf_right{
+    float: right;
+}
+.phone{
+    position: absolute;
+    /* border-radius: 55px; */
+    background: none;
 }
