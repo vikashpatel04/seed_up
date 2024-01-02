@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 *{
     margin: 0;
@@ -267,32 +268,130 @@ header .home_plant{
 footer{
     height: 80vh;
     width: 100%;
-    /* background-color: #055315; */
-    display: flex;
-}
-.holder_foot{
-    height: 60vh;
-    width: 100%;
-    background-color: #055315;
-    align-self: flex-end;
     position: relative;
 }
-.shape_1{
-    position: absolute;
-    height: 30%;
-    width: 40%;
-    border-radius: 70%;
-    background-color: #055315;
-    top: -50px;
+.wave {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
-.shape_1::before{
-    content: '';
-    position: absolute;
-    height: 40%;
-    width: 20%;
-    transform: rotate(160deg);
-    border-radius: 70%;
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 129px;
+}
+
+.wave .shape-fill {
+    fill: #055315;
+}
+.holder_foot{
+    height: 65vh;
+    width: 100%;
     background-color: #055315;
-    top: 35px;
-    left: -30px;
+    display: flex;
+    justify-content: center;
+}
+.footer_box_1{
+    /* background-color: #475569; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Mukta Vaani', sans-serif;
+    gap: 10px;
+}
+.footer_box_2{
+    /* background-color: #0c1522; */
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 30px;
+}
+.box_2_h1{
+    font-size: 1.6em;
+    font-family: 'Righteous', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer_box_3{
+    /* background-color: #4190ff; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.box_2_store{
+    display: flex;
+    gap: 20px;
+}
+.btn_contact{
+    background-color: #fff2f2;
+    border: none;
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.1em;
+    color: black;
+}
+.footer_box_4{
+    /* background-color: #055315; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 0px 0px 0px 20px;
+    gap: 20px;
+}
+.footer_box_4 p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3em;
+}
+.footer_box_4 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8em;
+}
+.footer_box_4 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.last_line{
+    background-color: #055315;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+    padding: 8px 30%;
+    color: #ffffff;
+}
+.last_line p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+}
+.last_line a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8em;
+}
+.last_line p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
 }
